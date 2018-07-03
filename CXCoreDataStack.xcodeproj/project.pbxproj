@@ -15,6 +15,15 @@
 		A3DDB39820E3BCC200D80C8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DDB39620E3BCC200D80C8F /* LaunchScreen.storyboard */; };
 		A3DDB3A320E3BCC200D80C8F /* CXCoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3A220E3BCC200D80C8F /* CXCoreDataStackTests.swift */; };
 		A3DDB3AE20E3BCC200D80C8F /* CXCoreDataStackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3AD20E3BCC200D80C8F /* CXCoreDataStackUITests.swift */; };
+		A3DDB3BD20E3BE1200D80C8F /* CXCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3BC20E3BE1200D80C8F /* CXCoreDataStack.swift */; };
+		A3DDB3C620E6316000D80C8F /* CXCoreDataCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3C520E6316000D80C8F /* CXCoreDataCommons.swift */; };
+		A3DDB3D120E63BED00D80C8F /* CXRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3CB20E63BED00D80C8F /* CXRequestParams.swift */; };
+		A3DDB3D220E63BED00D80C8F /* CXRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3CC20E63BED00D80C8F /* CXRequest.swift */; };
+		A3DDB3D320E63BED00D80C8F /* CXSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3CE20E63BED00D80C8F /* CXSession.swift */; };
+		A3DDB3D420E63BED00D80C8F /* CXSessioConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D020E63BED00D80C8F /* CXSessioConfig.swift */; };
+		A3DDB3D720E6407200D80C8F /* CXAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D620E6407200D80C8F /* CXAuth.swift */; };
+		A3DDB3DA20EB745200D80C8F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D820EB745200D80C8F /* Person+CoreDataClass.swift */; };
+		A3DDB3DB20EB745200D80C8F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D920EB745200D80C8F /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		A3DDB3A920E3BCC200D80C8F /* CXCoreDataStackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CXCoreDataStackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DDB3AD20E3BCC200D80C8F /* CXCoreDataStackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXCoreDataStackUITests.swift; sourceTree = "<group>"; };
 		A3DDB3AF20E3BCC200D80C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DDB3BC20E3BE1200D80C8F /* CXCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXCoreDataStack.swift; sourceTree = "<group>"; };
+		A3DDB3C520E6316000D80C8F /* CXCoreDataCommons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXCoreDataCommons.swift; sourceTree = "<group>"; };
+		A3DDB3CB20E63BED00D80C8F /* CXRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXRequestParams.swift; sourceTree = "<group>"; };
+		A3DDB3CC20E63BED00D80C8F /* CXRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXRequest.swift; sourceTree = "<group>"; };
+		A3DDB3CE20E63BED00D80C8F /* CXSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXSession.swift; sourceTree = "<group>"; };
+		A3DDB3D020E63BED00D80C8F /* CXSessioConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXSessioConfig.swift; sourceTree = "<group>"; };
+		A3DDB3D620E6407200D80C8F /* CXAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXAuth.swift; sourceTree = "<group>"; };
+		A3DDB3D820EB745200D80C8F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A3DDB3D920EB745200D80C8F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,7 @@
 		A3DDB37E20E3BCC100D80C8F = {
 			isa = PBXGroup;
 			children = (
+				A3DDB3BB20E3BCF200D80C8F /* Resources */,
 				A3DDB38920E3BCC100D80C8F /* CXCoreDataStack */,
 				A3DDB3A120E3BCC200D80C8F /* CXCoreDataStackTests */,
 				A3DDB3AC20E3BCC200D80C8F /* CXCoreDataStackUITests */,
@@ -106,6 +125,8 @@
 				A3DDB39620E3BCC200D80C8F /* LaunchScreen.storyboard */,
 				A3DDB39920E3BCC200D80C8F /* Info.plist */,
 				A3DDB39120E3BCC100D80C8F /* CXCoreDataStack.xcdatamodeld */,
+				A3DDB3D820EB745200D80C8F /* Person+CoreDataClass.swift */,
+				A3DDB3D920EB745200D80C8F /* Person+CoreDataProperties.swift */,
 			);
 			path = CXCoreDataStack;
 			sourceTree = "<group>";
@@ -126,6 +147,68 @@
 				A3DDB3AF20E3BCC200D80C8F /* Info.plist */,
 			);
 			path = CXCoreDataStackUITests;
+			sourceTree = "<group>";
+		};
+		A3DDB3BB20E3BCF200D80C8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3DC20EBA31800D80C8F /* DataStack */,
+				A3DDB3C920E63BED00D80C8F /* Networking */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3DDB3C920E63BED00D80C8F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3D520E6407200D80C8F /* MFSAuth */,
+				A3DDB3CA20E63BED00D80C8F /* URLRequest */,
+				A3DDB3CD20E63BED00D80C8F /* URLSession */,
+				A3DDB3CF20E63BED00D80C8F /* SessionConfig */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A3DDB3CA20E63BED00D80C8F /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3CB20E63BED00D80C8F /* CXRequestParams.swift */,
+				A3DDB3CC20E63BED00D80C8F /* CXRequest.swift */,
+			);
+			path = URLRequest;
+			sourceTree = "<group>";
+		};
+		A3DDB3CD20E63BED00D80C8F /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3CE20E63BED00D80C8F /* CXSession.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
+		A3DDB3CF20E63BED00D80C8F /* SessionConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3D020E63BED00D80C8F /* CXSessioConfig.swift */,
+			);
+			path = SessionConfig;
+			sourceTree = "<group>";
+		};
+		A3DDB3D520E6407200D80C8F /* MFSAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3D620E6407200D80C8F /* CXAuth.swift */,
+			);
+			path = MFSAuth;
+			sourceTree = "<group>";
+		};
+		A3DDB3DC20EBA31800D80C8F /* DataStack */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3BC20E3BE1200D80C8F /* CXCoreDataStack.swift */,
+				A3DDB3C520E6316000D80C8F /* CXCoreDataCommons.swift */,
+			);
+			path = DataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DDB3DB20EB745200D80C8F /* Person+CoreDataProperties.swift in Sources */,
+				A3DDB3C620E6316000D80C8F /* CXCoreDataCommons.swift in Sources */,
+				A3DDB3D220E63BED00D80C8F /* CXRequest.swift in Sources */,
+				A3DDB3D120E63BED00D80C8F /* CXRequestParams.swift in Sources */,
+				A3DDB3BD20E3BE1200D80C8F /* CXCoreDataStack.swift in Sources */,
 				A3DDB38D20E3BCC100D80C8F /* ViewController.swift in Sources */,
+				A3DDB3D320E63BED00D80C8F /* CXSession.swift in Sources */,
+				A3DDB3D720E6407200D80C8F /* CXAuth.swift in Sources */,
 				A3DDB38B20E3BCC100D80C8F /* AppDelegate.swift in Sources */,
+				A3DDB3DA20EB745200D80C8F /* Person+CoreDataClass.swift in Sources */,
+				A3DDB3D420E63BED00D80C8F /* CXSessioConfig.swift in Sources */,
 				A3DDB39320E3BCC100D80C8F /* CXCoreDataStack.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ45Y3HQY8;
 				INFOPLIST_FILE = CXCoreDataStack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ45Y3HQY8;
 				INFOPLIST_FILE = CXCoreDataStack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

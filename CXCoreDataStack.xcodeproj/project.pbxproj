@@ -24,6 +24,7 @@
 		A3DDB3D720E6407200D80C8F /* CXAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D620E6407200D80C8F /* CXAuth.swift */; };
 		A3DDB3DA20EB745200D80C8F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D820EB745200D80C8F /* Person+CoreDataClass.swift */; };
 		A3DDB3DB20EB745200D80C8F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3D920EB745200D80C8F /* Person+CoreDataProperties.swift */; };
+		A3DDB3DF20EBD30B00D80C8F /* CXDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDB3DE20EBD30B00D80C8F /* CXDebug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		A3DDB3D620E6407200D80C8F /* CXAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXAuth.swift; sourceTree = "<group>"; };
 		A3DDB3D820EB745200D80C8F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A3DDB3D920EB745200D80C8F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A3DDB3DE20EBD30B00D80C8F /* CXDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXDebug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		A3DDB3BB20E3BCF200D80C8F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3DDB3DD20EBD2DF00D80C8F /* Debug */,
 				A3DDB3DC20EBA31800D80C8F /* DataStack */,
 				A3DDB3C920E63BED00D80C8F /* Networking */,
 			);
@@ -209,6 +212,14 @@
 				A3DDB3C520E6316000D80C8F /* CXCoreDataCommons.swift */,
 			);
 			path = DataStack;
+			sourceTree = "<group>";
+		};
+		A3DDB3DD20EBD2DF00D80C8F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				A3DDB3DE20EBD30B00D80C8F /* CXDebug.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 				A3DDB3D120E63BED00D80C8F /* CXRequestParams.swift in Sources */,
 				A3DDB3BD20E3BE1200D80C8F /* CXCoreDataStack.swift in Sources */,
 				A3DDB38D20E3BCC100D80C8F /* ViewController.swift in Sources */,
+				A3DDB3DF20EBD30B00D80C8F /* CXDebug.swift in Sources */,
 				A3DDB3D320E63BED00D80C8F /* CXSession.swift in Sources */,
 				A3DDB3D720E6407200D80C8F /* CXAuth.swift in Sources */,
 				A3DDB38B20E3BCC100D80C8F /* AppDelegate.swift in Sources */,

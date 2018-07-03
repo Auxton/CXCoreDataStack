@@ -23,13 +23,12 @@ class ViewController: UIViewController {
             guard let persons: [ [String : Any] ] = response.prettyPrinted as? [ [String : Any] ] else {
                 return
             }
-            
+
             self.sharedDataStack.insert(persons: persons, completion: { (error, person:Person?) in
-                
+
                 self.sharedDataStack.get(completion: { (error2, persons:[Person]?) in
                     print("")
                 })
-                
             })
         }
     }

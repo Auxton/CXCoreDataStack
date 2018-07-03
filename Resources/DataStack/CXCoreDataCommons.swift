@@ -22,13 +22,13 @@ class CXCoreDataCommons {
 // MARK: Public
 extension CXCoreDataCommons {
     
-    func fetch<T: NSManagedObject>(context: StackContext, predicate: NSPredicate? = nil, descriptor: NSSortDescriptor? = nil, completion: @escaping (Error? , [T]?) -> ()) {
-        let request: NSFetchRequest<T> = T.fetchRequest() as! NSFetchRequest<T>
+    func get<T: NSManagedObject>(context: StackContext, predicate: NSPredicate? = nil, descriptor: NSSortDescriptor? = nil, completion: @escaping (Error? , [T]?) -> ()) {
+        let request: NSFetchRequest< T > = T.fetchRequest() as! NSFetchRequest< T >
         
         request.predicate = predicate
         
         context.perform {
-            let array: [T] = try! request.execute()
+            let array: [ T ] = try! request.execute()
             
             completion(nil, array)
         }
@@ -36,7 +36,7 @@ extension CXCoreDataCommons {
     
     func get<T: NSManagedObject>(completion: @escaping (Error?, [T]?) -> ()) {
         
-        self.fetch(context: dataStack.context()) { (error, object: [ T ]?) in
+        self.get(context: dataStack.context()) { (error, object: [ T ]?) in
             completion(error, object)
         }
     }
@@ -51,11 +51,11 @@ extension CXCoreDataCommons {
         context.perform {
             
             persons.forEach({ (person) in
-                let eName: String = NSStringFromClass(T.self)
-                let newInstance = NSEntityDescription.insertNewObject(forEntityName: eName, into: context)
+                let eName: String = NSStringFromClass( T.self )
+                let instance = NSEntityDescription.insertNewObject(forEntityName: eName, into: context)
                 
                 keys.forEach({ (key) in
-                    newInstance.setValue(person[key], forKey: key)
+                    instance.setValue(person[key], forKey: key)
                 })
             })
             

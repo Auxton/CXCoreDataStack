@@ -15,7 +15,7 @@ extension URLSessionConfiguration{
         return CXConfiguration(headers:[:])
     }
     
-    class func CXConfiguration(headers:Any?) -> URLSessionConfiguration{
+    class func CXConfiguration(headers: Any?) -> URLSessionConfiguration{
         let config = URLSessionConfiguration.default
         
         config.timeoutIntervalForRequest    = TimeInterval(kSessiontimeOut)

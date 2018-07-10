@@ -34,31 +34,31 @@ extension NSURLRequest {
 
 extension String{
         func get(parameters:CXRequestParams, completion: @escaping (CXResponse) -> ()) {
-        
+            
         parameters.endpoint     = self
         parameters.HTTPMethod   = .GET
-        
-        let task = URLSession.sharedCXSession.dataTask(with:NSURLRequest.requestWithParameters(params:parameters) as URLRequest) {
-            data, response, sessionError in
-        
-            var mResponse = CXResponse(data:data!, error:nil, response:response)
-            if !(mResponse.ok)! {
-                mResponse.error = NSError(domain:"CX", code:0000, userInfo:[NSLocalizedDescriptionKey:"Request Unsuccessful!"])
-            }
-            completion(mResponse)
-        }
+        let request: URLRequest = NSURLRequest.requestWithParameters(params:parameters) as URLRequest
+            
+        let task = URLSession.sharedCXSession.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
+            completion(CXResponse(data:data, error:error, response:response))
+        })
         task.resume()
     }
 }
 
 struct CXResponse {
     
-    let data: Data
-    var error: NSError?
+    let data: Data?
+    var error: Error?
     let response: URLResponse?
     
     var prettyPrinted: AnyObject? {
-        return try! JSONSerialization.jsonObject(with: data, options: []) as AnyObject
+        
+        if let d =  data {
+            return try! JSONSerialization.jsonObject(with: d, options: []) as AnyObject
+        }
+        
+        return nil
     }
     
     var code: Int? {

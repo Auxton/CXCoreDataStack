@@ -23,7 +23,7 @@ extension NSURLRequest {
         
         if let headers = params.headers {
             for (key, value) in headers{
-                request.addValue(value, forHTTPHeaderField:key)
+                request.addValue(value as! String, forHTTPHeaderField:key)
             }
         }
         

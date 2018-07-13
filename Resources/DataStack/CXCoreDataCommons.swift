@@ -41,7 +41,7 @@ extension CXCoreDataCommons {
         }
     }
     
-    func insert<T: NSManagedObject>(persons: [ [String : Any] ], completion: @escaping (NSError?, T?) -> () = {_,_  in }) {
+    func insert<T: NSManagedObject>(instance: [ [String : Any] ], completion: @escaping (NSError?, T?) -> () = {_,_  in }) {
         
         var keys: [String] = [String]()
         T.entity().attributesByName.enumerated().forEach { keys.append($0.element.key) }
@@ -50,7 +50,7 @@ extension CXCoreDataCommons {
         
         context.perform {
             
-            persons.forEach({ (person) in
+            instance.forEach({ (person) in
                 let eName: String = NSStringFromClass( T.self )
                 let instance = NSEntityDescription.insertNewObject(forEntityName: eName, into: context)
                 

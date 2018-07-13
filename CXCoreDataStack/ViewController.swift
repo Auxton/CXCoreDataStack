@@ -14,11 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let params   = CXRequestParams(baseURL: "https://app-staging.studentswipe.co.uk.")
-//        let endpoint = "api/test?Authorization=ace2244c995e4a7d077009d15ed2d1afc1f84fb1ceba52b3f49d7a6fc06e50c2"
         
-        let params = CXRequestParams(baseURL: "http://staging.iaustyn.com/parking/api/")
+        let params = CXRequestParams(baseURL: "https://staging.iaustyn.com/parking/api/")
         
         "users".get(parameters: params) { (response) in
             
@@ -27,7 +24,7 @@ class ViewController: UIViewController {
             }
 
             print("\(String(describing: response.prettyPrinted))")
-            self.sharedDataStack.insert(persons: persons, completion: { (error, person:Person?) in
+            self.sharedDataStack.insert(instance: persons, completion: { (error, person:Person?) in
 
                 self.sharedDataStack.get(completion: { (error2, persons:[Person]?) in
                     

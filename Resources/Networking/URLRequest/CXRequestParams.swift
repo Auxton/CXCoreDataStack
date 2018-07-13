@@ -21,10 +21,10 @@ class CXRequestParams {
     var baseURL: String?
     var endpoint: String?
     var HTTPMethod: CXHTTPMethod?
-    var headers: [String: String]?
-    var miscellaneous: [String: String]?
+    var headers: [String: Any]?
+    var miscellaneous: [String: Any]?
     
-     init(baseURL: String, body: Dictionary<String, Any>? = nil, headers:[String: String]? = nil) {
+     init(baseURL: String, body: Dictionary<String, Any>? = nil, headers:[String: Any]? = nil) {
         
         if let bdy = body {
             self.body = bdy
